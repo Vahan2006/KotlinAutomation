@@ -12,8 +12,4 @@ class GeneralMethods(private val driver: WebDriver) {
     fun click(locator: By){
         driver.findElement(locator).click()
     }
-
-    fun takeMoneyOutFromText(locator:By){
-        
-    }
 }

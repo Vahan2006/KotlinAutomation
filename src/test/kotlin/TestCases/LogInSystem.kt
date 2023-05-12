@@ -24,6 +24,7 @@ class LogInSystem {
         driver.quit()
     }
 
+    //This case will log in with valid data and assert that it is navigated to the right page
     @Test
     fun logInWithStandardUser(){
         val genMeth = GeneralMethods(driver)
@@ -38,6 +39,7 @@ class LogInSystem {
 
     }
 
+    //This case will try to log in with invalid data and assert the appearing error message
     @Test
     fun logInWithInvalidData(){
         val genMeth = GeneralMethods(driver)

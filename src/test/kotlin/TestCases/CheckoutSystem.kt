@@ -37,18 +37,20 @@ class CheckoutSystem {
         genMeth.click(productLoc.cartLocator)
         assertMeth.asserThatEquals(cartLoc.addedProductLocator,productNames.bag )
     }
-    @Test
-    fun ban(){
-        val cartLoc = CartLocators()
-        val checkLoc = CheckoutLocations()
-        val genMeth = GeneralMethods(driver)
-        val credentials = Credentials()
-        genMeth.click(cartLoc.checkoutButton)
-        genMeth.type(checkLoc.firstName, credentials.getStandardUserName())
-        genMeth.type(checkLoc.lastName, credentials.getUserLastName())
-        genMeth.type(checkLoc.postalCode, credentials.getPostalCode())
-        genMeth.click(checkLoc.continueButton)
-    }
+
+    //InProgress
+//    @Test
+//    fun ban(){
+//        val cartLoc = CartLocators()
+//        val checkLoc = CheckoutLocations()
+//        val genMeth = GeneralMethods(driver)
+//        val credentials = Credentials()
+//        genMeth.click(cartLoc.checkoutButton)
+//        genMeth.type(checkLoc.firstName, credentials.getStandardUserName())
+//        genMeth.type(checkLoc.lastName, credentials.getUserLastName())
+//        genMeth.type(checkLoc.postalCode, credentials.getPostalCode())
+//        genMeth.click(checkLoc.continueButton)
+//    }
 
 
 
